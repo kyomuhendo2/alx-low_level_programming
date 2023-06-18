@@ -1,13 +1,11 @@
 #include <stdio.h>
 /**
- * 
- * Prints stirng
+ * main -  Entry point
  *
- * Returns 0
- *
+ * Return: Always an integer (0)
  */
-int main (void)
+int main(void)
 {
-puts("Programming is like building a multilingual puzzle");
-return (0);
+	puts("Programming is like building a multilingual puzzle");
+	return (0);
 }
