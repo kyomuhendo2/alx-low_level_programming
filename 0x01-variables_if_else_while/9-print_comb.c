@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
 * main - prints all possible combinations of a single digit
 *
@@ -8,7 +7,7 @@
 int main(void)
 {
 	int r;
-	
+
 	for (r = 48; r < 58; r++)
 	{
 		putchar(r);
