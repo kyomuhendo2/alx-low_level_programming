@@ -9,7 +9,7 @@
 
 void rev_string(char *n)
 {
-	int i;	
+	int i;
 	int j;
 	char res;
 
@@ -18,13 +18,13 @@ void rev_string(char *n)
 		i++;
 	}
 	i--;
-	for ( j = 0; j < i; j++, i--)
+	for (j = 0; j < i; j++, i--)
 	{
 		res = *(n + j);
 		*(n + j) = *(n + i);
 		*(n + i) = res;
 	}
-} 
+}
 
 /**
 * infinite_add - adds two numbers
@@ -41,9 +41,9 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	int inf = 0, i = 0, j = 0, nums = 0;
 	int num1 = 0, num2 = 0, total_num = 0;
 
-	while(*(n1 + i) != '\0')
+	while (*(n1 + i) != '\0')
 		i++;
-	while(*(n2 + j) != '\0')
+	while (*(n2 + j) != '\0')
 		j++;
 	i--;
 	j--;
