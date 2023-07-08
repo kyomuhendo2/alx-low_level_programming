@@ -9,22 +9,22 @@
 
 int main(void)
 {
-	int x, y, fibb_sum, sum;
-	
+	unsigned long int x, y, fibb_sum, limit, sum;
+
 	x = 1;
 	y = 2;
-	fibb_sum = x + y;
-	for (fibb_sum = 0; fibb_sum <= 4000000; fibb_sum++)
+	limit = 4000000;
+	sum = 0;
+	while (y <= limit)
 	{
-		if (fibb_sum % 2 == 0)
+		if (y % 2 == 0)
 		{
-			sum += fibb_sum;
+			sum += y;
 		}
 		fibb_sum = x + y;
 		x = y;
 		y = fibb_sum;
-		printf("%d", fibb_sum);
 	}
-	printf("%d", sum);
+	printf("%lu\n", sum);
 	return (0);
 }
