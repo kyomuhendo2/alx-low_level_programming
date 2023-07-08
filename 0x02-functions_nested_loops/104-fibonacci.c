@@ -12,19 +12,19 @@ int main(void)
 {
 	int count;
 	unsigned long int x, y, fibb_sum;
-	
+
 	x = 1;
 	y = 2;
 
 	printf("%lu, ", x);
 	printf("%lu, ", y);
-	for (count = 1; count <= 86; count++)
+	for (count = 1; count <= 96; count++)
 	{
 		fibb_sum = x + y;
 		x = y;
 		y = fibb_sum;
 		printf("%lu", fibb_sum);
-		if (count == 86)
+		if (count == 96)
 		{
 			printf("\n");
 		}
