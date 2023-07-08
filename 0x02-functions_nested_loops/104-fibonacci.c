@@ -13,14 +13,15 @@ int main(void)
 	int count;
 	unsigned long int x, y, fibb_sum;
 
-	x = 0;
-	y = 1;
-	for (count = 0; count <= 98; count++)
+	x = 1;
+	y = 2;
+	printf("%lu, %lu, ", x, y);
+	for (count = 3; count <= 98; count++)
 	{
-		fibb_sum = x + y;
-		x = y;
-		y = fibb_sum;
-		printf("%lu", fibb_sum);
+		fibb_sum = y;
+		y = x + y;
+		x = fibb_sum;
+		printf("%lu", y);
 		if (count == 98)
 		{
 			printf("\n");
