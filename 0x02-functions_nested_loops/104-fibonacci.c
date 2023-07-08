@@ -16,7 +16,7 @@ int main(void)
 	x = 1;
 	y = 2;
 	printf("%lu, %lu", x, y);
-	for (count = 3; count <= 98; count++)
+	for (count = 1; count <= 98; count++)
 	{
 		fibb_sum = y;
 		y = x + y;
