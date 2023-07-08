@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include "main.h"
 
@@ -10,20 +11,20 @@
 int main(void)
 {
 	int count;
-	unsigned long x, y, fibb_sum;
-
+	unsigned long int x, y, fibb_sum;
+	
 	x = 1;
 	y = 2;
 
 	printf("%lu, ", x);
 	printf("%lu, ", y);
-	for (count = 1; count <= 83; count++)
+	for (count = 1; count <= 86; count++)
 	{
 		fibb_sum = x + y;
 		x = y;
 		y = fibb_sum;
 		printf("%lu", fibb_sum);
-		if (count == 83)
+		if (count == 86)
 		{
 			printf("\n");
 		}
