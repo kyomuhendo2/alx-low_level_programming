@@ -12,8 +12,9 @@ int main(void)
 	int count;
 	unsigned long x, y, fibb_sum;
 
-	x = 1;
-	y = 2;
+	x = 0;
+	y = 1;
+
 	for (count = 0; count < 50; count++)
 	{
 		fibb_sum = x + y;
