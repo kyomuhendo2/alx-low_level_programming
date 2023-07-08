@@ -20,6 +20,12 @@ void times_table(void)
 			res = x * y;
 			if (res == 0)
 			{
+				if (x == 0 && y > 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
 				_putchar(res + '0');
 			}
 			else if (res < 10 && y != 0)
