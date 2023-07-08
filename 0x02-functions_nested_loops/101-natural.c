@@ -7,7 +7,7 @@
 * Return: 0 and is a success!
 */
 
-int main()
+int main(void)
 {
 	int i, sum;
 
@@ -19,4 +19,5 @@ int main()
 			printf("%d\n", sum);
 		}
 	}
+	return (0);
 }
