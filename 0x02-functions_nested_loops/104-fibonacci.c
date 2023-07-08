@@ -17,13 +17,13 @@ int main(void)
 
 	printf("%lu, ", x);
 	printf("%lu, ", y);
-	for (count = 1; count <= 98; count++)
+	for (count = 1; count <= 83; count++)
 	{
 		fibb_sum = x + y;
 		x = y;
 		y = fibb_sum;
 		printf("%lu", fibb_sum);
-		if (count == 98)
+		if (count == 83)
 		{
 			printf("\n");
 		}
