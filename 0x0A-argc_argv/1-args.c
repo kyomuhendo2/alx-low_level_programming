@@ -4,7 +4,7 @@
 /**
 * main - function that prints its own name
 * @argc: number of arguments
-* @argv[]: vector of the arguments
+* @argv: vector of the arguments
 *
 * Return: 0 success!
 */
