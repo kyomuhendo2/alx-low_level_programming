@@ -2,26 +2,23 @@
 #include <stdio.h>
 
 /**
-* array_iterator - executes a function given as a parameter on 
+* array_iterator - executes a function given as a parameter on
 * each element of an array
 * @array: array
 * @size: array size
-* @action: pointer to the function 
+* @action: pointer to the function
 *
 * Return: 0 and is a success
 */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	size_t i;
+	unsigned int i;
 
-	if (array && action)
+	if (array == NULL || action == NULL)
+		return;
+	for (i = 0; i < size; i++)
 	{
-		i = 0;
-		while(i < size)
-		{
-			action(array[i]);
-			i++;
-		}
+		action(array[i]);
 	}
 }
