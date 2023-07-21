@@ -4,7 +4,8 @@
 
 /**
 * main - addition function
-* @s: string opp
+* @argc: number of arguments
+* @argv: contents of arguments
 *
 * Return: 0
 */
@@ -24,7 +25,7 @@ int main(int argc, char *argv[])
 	if (!oprt)
 	{
 		printf("Error\n");
-		exit(99);		
+		exit(99);
 	}
 	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
 	return (0);

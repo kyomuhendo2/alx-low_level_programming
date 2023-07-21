@@ -4,8 +4,8 @@
 /**
 * struct op - struct op
 *
-* @op - Operator
-* @f - function associated
+* @op: ...
+* @f: ...
 */
 
 typedef struct op
