@@ -1,13 +1,14 @@
 section .data
-	format db "Hello, Holberton\n", 0
+	format db "Hello, Holberton", 0x0A, 0
+
 section .text
 	global main
 
-	external printf
+extern printf
 
 main:
-	push format
+	mov rdi, format
+	xor rax, rax
 	call printf
-	add rsp, 8
-	eor eax, eax
+	xor eax, eax
 	ret
